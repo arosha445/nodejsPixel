@@ -14,9 +14,9 @@ for (y = 0; y < 300; y++) {
     // image.setAt(20, y, { red:255, green:0, blue:0, alpha:100 });
     
     redCol = (y/300)*255;    
-    console.log('y: '+y+' red:'+redCol);
     for (x = 0; x < 100; x++) { 
-        image.setAt(x, y, { red:redCol, green:0, blue:0, alpha:100 });
+        greenCol = (x/100)*255;
+        image.setAt(x, y, { red:redCol, green:0, blue:greenCol, alpha:100 });
     }
 }
  
